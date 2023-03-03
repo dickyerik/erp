@@ -45,7 +45,7 @@ $username = $_SESSION["username"];
     </div>
 
     <div class="menu">
-        <a href="">Master Asset</a>
+        <a href="index.php">Master Asset</a>
         <a href="tambahasset.php">Tambah Asset Baru</a>
         <!-- <a href=""></a>
         <a href=""></a>
@@ -54,39 +54,7 @@ $username = $_SESSION["username"];
     </div>
 
     <div class="main">
-        <h2>Master Asset</h2>
-
-        <form action="" method="post">
-            <input size="35" autofocus id="keyword" type="text" name="keyword" autocomplete="off" placeholder="Masukkan keyword pencarian..." aria-label="Search">
-            <button type="submit" name="cari" id="tombol-cari" hidden>Cari!</button>
-        </form>
-        <table>
-            <thead>
-                <tr>
-                    <th>No</th>
-                    <th>Edit</th>
-                    <th>Nama Barang</th>
-                    <th>Satuan</th>
-                </tr>
-            </thead>
-            <?php $no = 1; ?>
-            <?php foreach ($barang as $brg) : ?>
-                <tbody>
-                    <tr>
-                        <th><?= $no; ?></th>
-                        <th>
-                            <a href="details.php?id=<?= $brg["assetId"]; ?>">Details</a>
-                            <hr>
-                            <a href="ubah.php?id=<?= $brg["assetId"]; ?>">Ubah</a>
-                        </th>
-                        <td><?= $brg["namaAsset"]; ?></td>
-                        <td><?= $brg["satuanAsset"]; ?></td>
-
-                    </tr>
-                </tbody>
-                <?php $no++; ?>
-            <?php endforeach; ?>
-        </table>
+        <h2>Tambah Asset Baru</h2>
     </div>
     <script src="js/scriptbarang.js"></script>
 
