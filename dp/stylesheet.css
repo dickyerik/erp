@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+:root {
+    --color-primary: #7380ec;
+    --color-danger: #ff7782;
+    --color-success: #41f1b6;
+    --color-warning: #ffbb55;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-info-light: #dce1eb;
+    --color-dark: #363949;
+    --color-light:rgba(132, 139, 200, 0.18);
+    --color-primary-variant: #111e88;
+    --color-dark-variant:#677483;
+    --color-background: #f6f6f9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+/* ==================== LOGIN PAGE ==================== */
+.loginpage {
+    width: 100vw;
+    height: 100vh;
+    font-family: poppins;
+    font-size: 1rem;
+    background: var(--color-background);
+    overflow-x: hidden;
+}
+
+.container {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20rem;
+}
+
+.signin {
+    position: relative;
+    top: 0;
+    left: 0;
+    background:var(--color-white);
+    border: 1px solid rgba(255,255,255,0.5);
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 1rem 3rem 4rem var(--color-light);
+}
+
+.logo {
+    display: block;
+    height: 100px;
+    margin: -45px auto 0px;
+}
+
+.container .erp {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 0.8rem;
+    color: var(--color-primary);
+}
+
+.container .judul {
+    color: var(--color-primary-variant);
+    font-size: 1.9rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social .ikon {
+    border: 1px solid var(--color-primary);
+    width: 3rem;
+    height: 3rem;
+    color: var(--color-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 300ms ease;
+}
+
+.social .ikon:hover {
+    background: var(--color-primary-variant);
+    color: white;
+}
+
+.parag {
+    text-align: center;
+    font-size: medium;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.container .formlogin .inputlogin {
+    display: block;
+    width: 100%;
+    border: 2px solid var(--color-dark-variant);
+    border-radius: 0.8rem;
+    outline: none;
+    padding: 1rem;
+    background: rgba(48, 30, 30, 0.15);
+    color: var(--color-dark);
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.container .formlogin .inputlogin::placeholder {
+    color: var(--color-info-dark);
+}
+
+.container .formlogin .inputlogin[type="submit"] {
+    background: var(--color-primary);
+    transition: all 300ms ease;
+    cursor: pointer;
+    color: black;
+    border: none;
+}
+
+.container .formlogin .inputlogin[type="text"]:hover {
+    border-color: var(--color-primary);
+    transition: all 300ms ease;
+    cursor: pointer;
+    color: black;
+}
+
+.container .formlogin .inputlogin[type="password"]:hover {
+    border-color: var(--color-primary);
+    transition: all 300ms ease;
+    cursor: pointer;
+    color: black;
+}
+
+.container .formlogin .inputlogin[type="submit"]:hover {
+    opacity: 0.6;
+}
+/* ==================== END OF LOGIN PAGE ==================== */
+
+
+
+
+/* ==================== START OF INDEX ADMIN ==================== */
+.indexadmin {
+    width: 100vw;
+    height: 100vh;
+    font-family: poppins, sans-serif;
+    font-size: 0.88rem;
+    background: var(--color-background);
+    user-select: none;
+    overflow-x: hidden;
+    color: var(--color-dark);
+}
+
+.kontener {
+    display: grid;
+    width: 96%;
+    margin: 0 auto;
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto 23rem;
+}
+
+/* ASIDE */
+aside {
+    background: #ffffff;
+    height: 100vh;
+    width: max-content;
+}
+
+aside .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+}
+
+aside .logodp {
+    display: flex;
+    gap: 1.7rem;
+}
+
+aside .logodp img{
+    width: 4.5rem;
+    height: 3rem;
+}
+
+aside > .top > .logodp > h2 {
+    font-size: 1.5rem;
+    margin-top: 0.3rem;
+}
+
+aside .close{
+    display: none;
+}
+/* END OF ASIDE */
+
+/* SIDEBAR */
+aside .sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    position: relative;
+    top: 1rem;
+    width: max-content;
+}
+
+aside h3 {
+    font-weight: 500;
+}
+
+aside .sidebar a {
+    display: flex;
+    color: var(--color-info-dark);
+    margin-left: 1rem;
+    margin-right: 1rem;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    height: 3.7rem;
+    transition: all 300ms ease;
+}
+
+aside .sidebar a h4 {
+    font-weight: 400;
+    margin-left: 1rem;
+    height: 3rem;
+}
+
+aside .sidebar a:hover {
+    color: var(--color-primary);
+    margin-left: 1.3rem;
+}
+
+aside .sidebar a.active {
+    background: var(--color-light);
+    color: var(--color-primary);
+    margin-left: 0;
+}
+
+aside .sidebar a.active:before {
+    content: '';
+    width: 6px;
+    height: 100%;
+    background: var(--color-primary);
+}
+
+aside .sidebar a.active {
+    color: var(--color-primary);
+    margin-left: calc(1rem - 6px);
+}

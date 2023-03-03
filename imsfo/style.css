@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+/* --------------------LOGIN-------------------- */
+.login {
+    background-color: blue;
+    width: max-content;
+    height: max-content;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.erp {
+    padding: 1rem;
+}
+
+.judul {
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.formlogin {
+    padding: 2rem;
+    background-color: white;
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+.formlogin > ul > li {
+    padding: 0.5rem;
+}
+
+.formlogin > ul > li > input {
+    height: 2.5rem;
+    border: blue 2px solid;
+    border-radius: 50px;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.formlogin>ul>li>button {
+    background-color: white;
+    border: 1px solid blue;
+    padding: 0.3rem;
+    border-radius: 2px;
+}
+
+.formlogin>ul>li>button:hover {
+    background-color: blue;
+    color: white;
+}
+
+/* --------------------END OF LOGIN-------------------- */
+
+
+
+
+/* --------------------HOMEPAGE-------------------- */
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: poppins, sans-serif;
+    background: var(--color-background);
+    user-select: none;
+    overflow-x: hidden;
+    color: var(--color-dark);
+}
+
+.header {
+    background-color: red;
+    padding: 15px;
+    height: 20vh;
+}
+
+.header > h1, h3 {
+    color: whitesmoke;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    top: 1rem;
+    width: 20%;
+    float: left;
+    padding: 1rem;
+    background-color: whitesmoke;
+}
+
+.menu > a {
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+    padding-left: 0.5rem;
+    color: red;
+    font-size: 0.95rem;
+}
+
+.menu > a {
+    transition: all 0.5s ease;
+    margin-left: 10px;
+    border-radius: 100px;
+    text-align: left;
+    
+}
+
+.menu > a:hover {
+    margin-left: 1rem;
+    background-color: white;
+    
+}
+
+.nav {
+    margin-top: 1rem;
+    height: 3rem;
+    float: left;
+    text-align: center;
+}
+
+.nav > .nav-item {
+    margin-top: 1rem;
+    color: whitesmoke;
+    padding: 0.5rem;
+}
+
+.nav > .nav-item:hover {
+    color: red;
+    background-color: white;
+    border-radius: 100px;
+}
+/* --------------------END OF HOMEPAGE-------------------- */
+
+
+
+/* --------------------MAIN-------------------- */
+.main {
+    width: 80%;
+    float: left;
+    height: 80vh;
+    padding: 0.1rem;
+}
+
+table, thead, tbody, td, tr, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 0.1rem;
+    text-align: center;
+    font-size: 0.85rem;
+    height: 0.5rem;
+}
+

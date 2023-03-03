@@ -1,0 +1,3 @@
+$("#tags").autocomplete({
+    source: availableTags
+});

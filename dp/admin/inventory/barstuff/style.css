@@ -1,0 +1,14 @@
+.on {
+    display: none;
+}
+
+@media print {
+    .no {
+        display: none;
+    }
+
+    .on {
+        display: flex;
+    }
+}
+
